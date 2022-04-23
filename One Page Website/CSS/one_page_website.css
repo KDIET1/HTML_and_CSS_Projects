@@ -1,0 +1,10 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+.form {
+    width: 30%;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-radius: 8px;
+}
