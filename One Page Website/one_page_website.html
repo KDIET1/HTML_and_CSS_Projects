@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<title>True Rebel Horse Retirement Stables</title>
-		<link rel="stylesheet" href="./css/one_page_website.css"
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./JS/one_page_website.js"></script>
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -24,7 +25,7 @@
 	<!--IMAGES SECTION-->
 			<img src="./Images/oldhorse.jpg" alt="old horse picture">
 	<!--END IMAGES-->
-	
+
 	<!--VIDEOS SECTION-->
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/9gZHb6ulriE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<!--END VIDEOS-->
@@ -40,8 +41,61 @@
 		</form>
 	</div>
 	<!--END CONTACT-->
-	
 
+	<!--LIGHTBOX SECTION-->
+	<div class="row">
+		<div class="column">
+			<img src="./Images/pasture.jpg" onclick="openModal();currentSlide1" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="./Images/oldhorse.jpg" onclick="openModal();currentSlide1" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="./Images/stable.jpg" onclick="openModal();currentSlide1" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="./Images/grooming.jpg" onclick="openModal();currentSlide1" class="hover-shadow">
+		</div>
+		</div>
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1/4</div>
+					<img src="./Images/pasture.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2/4</div>
+					<img src="./Images/oldhorse.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2/4</div>
+					<img src="./Images/stable.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2/4</div>
+					<img src="./Images/grooming.jpg" style="width:100%">
+				</div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+			<div class="column">
+				<img class="demo" src="./Images/pasture.jpg" onclick="currentSlide(1)" alt="pasture">
+			</div>
+			<div class="column">
+				<img class="demo" src="./Images/oldhorse.jpg" onclick="currentSlide(1)" alt="old horse">
+			</div>
+			<div class="column">
+				<img class="demo" src="./Images/stable.jpg" onclick="currentSlide(1)" alt="stable">
+			</div>
+			<div class="column">
+				<img class="demo" src="./Images/grooming.jpg" onclick="currentSlide(1)" alt="grooming">
+			</div>
+		</div>
+	</div>
 	</body>
 	<footer>
 	</footer>
